@@ -1,0 +1,65 @@
+.Rest{
+    background-color:#fafafa;
+    padding: 15px 16px;
+    margin-bottom:30px;
+    &__title{
+        margin:48px 0px 20px 5px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 250px);
+        row-gap: 20px;
+        padding:0;
+    }
+    &bullet{
+        border-radius:15px;
+        background-color:#fff;
+        overflow: hidden;
+        &__link{
+            text-decoration: none;
+            position:relative;
+            display: flex;
+            flex-flow: column nowrap;
+            height: 100%;
+            width: 100%;
+            &_img{
+                height:175px;
+                object-fit: cover;
+                width:100%;
+            }
+            &_new{
+                background-color:$tiertiary-color;
+                position: absolute;
+                padding: 7.5px;
+                right:20px;
+                top:12px;
+            }
+            &footer{
+                padding:15px;
+                display:flex;
+                align-items:center;
+                &_fdiv{
+                    flex:1;
+                    &_title{
+                        margin:0 0 5px;
+                    }
+                    &_text{
+                        margin:0;
+                    }
+                }
+                &_sdiv{
+                    flex:0;
+                }
+            }
+ 
+
+        
+                
+        }
+
+    }
+}
+
+
+

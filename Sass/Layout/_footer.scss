@@ -1,0 +1,26 @@
+.footer{
+    background-color: #000;
+    color:white;
+    padding:27px 25px;
+    &__logo{
+        font-family: 'Shrikland';
+        font-size:18px;
+        
+    }
+    &list{
+        margin: 0;
+        padding: 0;
+        &__bullet{
+            list-style: none;
+            margin-top:10px;
+            &_links{
+                text-decoration: none;
+                color:#FFF;
+                &_icons{
+                    font-size:12px;
+                    margin-right:5px;
+                }
+            }
+        }    
+    }
+}

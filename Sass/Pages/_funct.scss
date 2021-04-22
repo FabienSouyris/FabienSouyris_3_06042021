@@ -1,0 +1,42 @@
+.funct{
+    padding: 20px 15px;
+    
+    &__title{
+        margin: 0px 0px 36px 5px;
+    }
+    &__list{
+        margin:0;
+        padding:0;        
+        list-style:none;
+        counter-reset:CompteListe;
+        &bullet{
+            display:flex;
+            border-radius: 15px;
+            background-color: #fafafa;
+            padding:20px;
+            margin: 0px 0px 40px 10px;
+        }
+        &bullet::before{
+            counter-increment: CompteListe 1;
+            content: counter(CompteListe) "";
+            display:flex;
+            background:$primary-color;
+            color:#fff;
+            height:23px;
+            width:23px;
+            border-radius: 100px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left:23px;
+        }
+        &bullet--icon{
+            margin:0px 27px 0px 21px;;
+            color:#7e7e7e;
+            font-size:19px;
+        }
+        &bullet--text{
+            font-size:16.3px;
+        }
+    }
+}
