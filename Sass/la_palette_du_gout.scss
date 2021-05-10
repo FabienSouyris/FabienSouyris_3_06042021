@@ -1,0 +1,15 @@
+@import "./Utils/variables";
+@import "./Base/fonts";
+
+body
+{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto';
+    list-style-type:none;
+    text-decoration: none;
+}
+
+@import "./Layout/header";
+@import "./Layout/main";
+@import "./Layout/footer";

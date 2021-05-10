@@ -23,6 +23,7 @@
             flex-flow: column nowrap;
             height: 100%;
             width: 100%;
+            color:black;
             &_img{
                 height:175px;
                 object-fit: cover;
@@ -50,14 +51,15 @@
                 }
                 &_sdiv{
                     flex:0;
+                    &_icon{
+                        &::before{
+                        font-size:23px;                        
+                        }
+                        margin: 0px 13px 16px 0px;                        
+                    }
                 }
-            }
- 
-
-        
-                
+            }                        
         }
-
     }
 }
 

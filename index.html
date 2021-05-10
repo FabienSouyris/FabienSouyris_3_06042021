@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>ohmyfood</title>
-        <link rel="stylesheet" href="main.css"> 
+        <link rel="stylesheet" href="index.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
     </head>
@@ -11,8 +11,10 @@
     <body>
 
         <!--header of the main page (without the return arrow)-->
-        <header class="headermainpage">
-            <h1 class="headermainpage__title">ohmyfood</h1>
+        <header class="header">
+            <div class="header__div">
+                <h1 class="header__div_title">ohmyfood</h1>
+            </div>
         </header>
 
 
@@ -20,7 +22,7 @@
 
         <main class="main">
 
-            <section class="location">
+            <section class="location">                
                 <i class="fas fa-map-marker-alt location__icon"></i>
                 <span class="location__text">Paris, Belleville</span>
             </section>
@@ -53,7 +55,7 @@
                 <h2 class="Rest__title">Restaurants</h2>
                 <ul class="Rest__list">
                     <li class="Restbullet">
-                        <a class="Restbullet__link">                            
+                        <a href="la_palette_du_gout.html" target="_blank" class="Restbullet__link">                            
                             <img src="images/Maquettes Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat au restaurant" class="Restbullet__link_img" />
                             <span class="Restbullet__link_new">Nouveau</span>
                             <footer class="Restbullet__linkfooter">
@@ -62,7 +64,7 @@
                                     <p class="Restbullet__linkfooter_fdiv_text">Ménilmontant</p>
                                 </div>
                                 <div class="Restbullet__linkfooter_sdiv">
-                                    <i class="card__like fa-2x fa-heart far "></i>
+                                    <i class="fa-heart far fa-2x Restbullet__linkfooter_sdiv_icon  "></i>
                                 </div>
                             </footer>
                         </a>
@@ -77,7 +79,7 @@
                                     <p class="Restbullet__linkfooter_fdiv_text">Charonne</p>
                                 </div>
                                 <div class="Restbullet__linkfooter_sdiv">
-                                    <i class="card__like fa-2x fa-heart far "></i>
+                                    <i class="fa-2x fa-heart far Restbullet__linkfooter_sdiv_icon "></i>
                                 </div>
                             </footer>
                         </a>
@@ -91,7 +93,7 @@
                                     <p class="Restbullet__linkfooter_fdiv_text">Cité rouge</p>
                                 </div>
                                 <div class="Restbullet__linkfooter_sdiv">
-                                    <i class="card__like fa-2x fa-heart far "></i>
+                                    <i class="fa-2x fa-heart far Restbullet__linkfooter_sdiv_icon "></i>
                                 </div>
                             </footer>
                         </a>
@@ -105,7 +107,7 @@
                                     <p class="Restbullet__linkfooter_fdiv_text">Folie-Méricourt</p>
                                 </div>
                                 <div class="Rest__linkfooter_sdiv">
-                                    <i class="card__like fa-2x fa-heart far "></i>
+                                    <i class="fa-2x  far fa-heart Restbullet__linkfooter_sdiv_icon  "></i>
                                 </div>
                             </footer>                        
                         </a>

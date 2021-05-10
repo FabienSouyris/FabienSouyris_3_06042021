@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Shrikland";
+  src: url("/Fonts/Shrikhand-Regular.ttf") format("TrueType");
+  font-size: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("/Fonts/Roboto-Black.ttf") format("TrueType");
+  src: url("/Fonts/Roboto-Regular.ttf") format("TrueType");
+  font-size: normal;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+}
+.header__div {
+  position: relative;
+}
+.header__div_link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__div_link_icon::before {
+  position: absolute;
+  left: 21px;
+  height: 10px;
+  width: 20px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: #000;
+}
+.header__div_title {
+  font-family: "Shrikland";
+  text-align: center;
+  margin: 14px 0px 6px 0px;
+  font-size: 30px;
+}
+.header__img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.main {
+  margin-top: -35px;
+  position: relative;
+  z-index: 1;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+}
+.mainheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 36px 5px 20px;
+  position: relative;
+}
+.mainheader__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Shrikland";
+  font-size: 28px;
+}
+.mainheader__icon::before {
+  font-size: 24px;
+}
+.maindiv {
+  padding: 5px 20px;
+}
+.maindivmenusections {
+  margin-bottom: 35px;
+}
+.maindivmenusections__title {
+  position: relative;
+  padding-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.maindivmenusections__title::after {
+  content: "";
+  width: 40px;
+  height: 2.5px;
+  background-color: #99e2d0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.maindivmenusections__list {
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.maindivmenusections__listli {
+  display: flex;
+  background-color: #fff;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.maindivmenusections__listli:hover .maindivmenusections__listlidivc {
+  width: 60px;
+  margin-right: -10px;
+}
+.maindivmenusections__listlidivd {
+  flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.maindivmenusections__listlidivd_title {
+  font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 5px 0;
+  padding: 0;
+}
+.maindivmenusections__listlidivd_text {
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+}
+.maindivmenusections__listlidivp_price {
+  height: 49px;
+  line-height: 77px;
+  margin: 0;
+}
+.maindivmenusections__listlidivc {
+  background-color: #99E2D0;
+  width: 60px;
+  margin: -10px -70px -10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+.maindivmenusections__listlidivcic {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+}
+.maindivmenusections__listlidivcic_icon::before {
+  font-size: 18px;
+  color: #99E2D0;
+}
+.maincommand {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding: 18px 10px 55px 10px;
+}
+.maincommand__btn {
+  margin-left: 0px;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 27px 25px;
+}
+.footer__logo {
+  font-family: "Shrikland";
+  font-size: 18px;
+}
+.footerlist {
+  margin: 0;
+  padding: 0;
+}
+.footerlist__bullet {
+  list-style: none;
+  margin-top: 10px;
+}
+.footerlist__bullet_links {
+  text-decoration: none;
+  color: #FFF;
+}
+.footerlist__bullet_links_icons {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=la_palette_du_gout.css.map */
