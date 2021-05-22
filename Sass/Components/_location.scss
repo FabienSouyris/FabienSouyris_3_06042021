@@ -1,9 +1,10 @@
 .location{
     display:flex;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: #ebebeb;
     padding: 15px 0px;
     font-size: 16.5px;
+    animation:fadein 3s linear forwards;
     &__icon{
         font-weight:900;
         margin-right:15px;
@@ -12,3 +13,9 @@
         font-weight:900;
     }
 }
+
+@keyframes fadein{
+    0%{display:none; opacity:0;}
+    99%{opacity:1;}
+    100%{display:block; opacity:1;}
+  }

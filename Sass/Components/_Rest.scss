@@ -1,9 +1,9 @@
 .Rest{
-    background-color:#fafafa;
-    padding: 15px 16px;
-    margin-bottom:30px;
+    background-color:#f6f6f6;
+    padding: 15px 16px 45px 16px;
+    animation:fadein 3s linear forwards;
     &__title{
-        margin:48px 0px 20px 5px;
+        margin:40px 0px 20px 5px;
     }
     &__list{
         display: grid;
@@ -31,6 +31,7 @@
             }
             &_new{
                 background-color:$tiertiary-color;
+                color: #1b6150;
                 position: absolute;
                 padding: 7.5px;
                 right:20px;
@@ -52,10 +53,21 @@
                 &_sdiv{
                     flex:0;
                     &_icon{
+                        margin: 0px 13px 16px 0px;  
                         &::before{
-                        font-size:23px;                        
-                        }
-                        margin: 0px 13px 16px 0px;                        
+                            font-size:23px;
+                            cursor:pointer;
+                                            
+                        }                                              
+                    }
+                    &_icon:hover::before{
+                        transition: all 0.5s ease-in-out;             
+                        background-image:linear-gradient(0deg,$primary-color,$secondary-color); 
+                        font-weight: bold;
+                        -webkit-background-clip: text;
+                        -moz-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color:transparent;                       
                     }
                 }
             }                        
@@ -63,5 +75,19 @@
     }
 }
 
+@keyframes fadein{
+    0%{display:none; opacity:0;}
+    99%{opacity:1;}
+    100%{display:block; opacity:1;}  
+}
 
-
+@media all and (min-width:1024px) {
+    .Rest{
+        &__list{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            row-gap: 20px;
+            column-gap: 20px;
+        }
+    }
+}

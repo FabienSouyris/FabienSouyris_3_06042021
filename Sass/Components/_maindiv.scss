@@ -1,0 +1,111 @@
+.maindiv{
+    padding:5px 20px;
+    &menusections{
+        margin-bottom:35px;
+        &__title{
+            position:relative; 
+            padding-bottom: 10px;
+            font-size:18px;
+            margin-bottom: 0;               
+            &::after{
+                content: "";
+                width: 45px;
+                height: 2.5px;
+                background-color: #99e2d0;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        &__list{
+            text-decoration: none;
+            color:black;
+            list-style: none;
+            margin:0;
+            padding:0;
+            &li{
+                display:flex;
+                background-color: #fff;
+                margin: 10px 0px;
+                padding:10px;
+                border-radius: 15px;
+                box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+                overflow:hidden;
+                cursor: pointer;
+                &:hover .maindivmenusections__listlidivc{
+                    width : 60px;
+                    margin-right:-10px;                       
+                }
+                &:hover .maindivmenusections__listlidivcic{
+                    transform: rotate(0deg);
+                }
+                &divd{
+                    flex:1;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;                 
+                    &_title{
+                        font-size:18px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        margin:5px 0;
+                        padding:0;
+                    }
+                    &_text{
+                        font-size:14px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        margin:0;
+                        padding:0;
+                    }
+                }
+                &divp{
+                    &_price{
+                        height: 49px;
+                        line-height:77px;
+                        margin: 0;
+                        font-weight: bold;
+                    }
+                }
+                &divc{
+                    background-color:$tiertiary-color;
+                    width:60px;
+                    margin:-10px -70px -10px 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;                                             
+                    transition: all 0.4s ease-in-out;                        
+                    &ic{
+                        width:25px;
+                        height:25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: white;
+                        border-radius: 100px;
+                        transform: rotate(180deg);    
+                        transition: all 0.75s;                           
+                        &_icon::before{
+                            
+                            font-size:18px;
+                            color:$tiertiary-color;
+
+                        }
+                    }                           
+                }               
+            }
+        }
+    }
+}
+
+
+@media all and(min-width:1024px) 
+{
+    .maindiv{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 25px;
+    }
+}

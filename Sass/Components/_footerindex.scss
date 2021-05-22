@@ -1,12 +1,12 @@
-.footer{
+.footerindex{
     position: relative;
     background-color: #000;
     color:white;
     padding:27px 25px;
+    animation:fadein 3s linear backwards;
     &__logo{
         font-family: 'Shrikland';
-        font-size:18px;
-        
+        font-size:18px;        
     }
     &list{
         margin: 0;
@@ -28,4 +28,10 @@
             }
         }    
     }
+}
+
+@keyframes fadein{
+    0%{display:none; opacity:0;}
+    99%{opacity:0;}
+    100%{display:block; opacity:1;}
 }

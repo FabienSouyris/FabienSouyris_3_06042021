@@ -9,10 +9,10 @@ body
     list-style-type:none;
     text-decoration: none;
 }
-
-@import "./Layout/header";
-@import "./Pages/location";
-@import "./Pages/Explo";
-@import "./Pages/funct";
-@import "./Pages/Rest";
-@import "./Layout/footer"; 
+@import "./Components/loader";
+@import "./Components/headerindex";
+@import "./Components/location";
+@import "./Components/Explo";
+@import "./Components/funct";
+@import "./Components/Rest";
+@import "./Components/footerindex"; 
