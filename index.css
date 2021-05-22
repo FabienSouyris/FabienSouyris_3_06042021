@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("/Fonts/Shrikhand-Regular.ttf") format("TrueType");
+  src: url("Fonts/Shrikhand-Regular.ttf") format("TrueType");
 }
 @font-face {
   font-family: "Roboto";
-  src: url("/Fonts/Roboto-Black.ttf") format("TrueType");
-  src: url("/Fonts/Roboto-Regular.ttf") format("TrueType");
+  src: url("Fonts/Roboto-Black.ttf") format("TrueType");
+  src: url("Fonts/Roboto-Regular.ttf") format("TrueType");
 }
 body {
   margin: 0;
