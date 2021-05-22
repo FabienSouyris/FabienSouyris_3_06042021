@@ -1,11 +1,15 @@
 @font-face {
   font-family: "Shrikhand";
   src: url("Fonts/Shrikhand-Regular.ttf") format("TrueType");
+  font-size: medium;
+  font-weight: normal;
 }
 @font-face {
   font-family: "Roboto";
   src: url("Fonts/Roboto-Black.ttf") format("TrueType");
   src: url("Fonts/Roboto-Regular.ttf") format("TrueType");
+  font-size: medium;
+  font-weight: normal;
 }
 body {
   margin: 0;
@@ -349,7 +353,7 @@ body {
   animation: fadein 3s linear backwards;
 }
 .footerindex__logo {
-  font-family: "Shrikland";
+  font-family: "Shrikhand";
   font-size: 18px;
 }
 .footerindexlist {
