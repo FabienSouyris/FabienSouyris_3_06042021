@@ -1,7 +1,8 @@
 .maindiv{
-    padding:5px 20px;
+    padding:5px 20px;    
     &menusections{
         margin-bottom:35px;
+        overflow: hidden;
         &__title{
             position:relative; 
             padding-bottom: 10px;
@@ -29,7 +30,7 @@
                 margin: 10px 0px;
                 padding:10px;
                 border-radius: 15px;
-                box-shadow: 10px 10px 20px rgba(0,0,0,.1);
+                box-shadow: 10px 150px 20px rgba(0,0,0,.1);
                 overflow:hidden;
                 cursor: pointer;
                 &:hover .maindivmenusections__listlidivc{

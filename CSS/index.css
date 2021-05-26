@@ -1,13 +1,12 @@
 @font-face {
   font-family: "Shrikhand";
-  src: url("Fonts/Shrikhand-Regular.ttf") format("TrueType");
+  src: url("../../Fonts/Shrikhand-Regular.ttf") format("TrueType");
   font-size: medium;
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("Fonts/Roboto-Black.ttf") format("TrueType");
-  src: url("Fonts/Roboto-Regular.ttf") format("TrueType");
+  src: url("../../Fonts/Roboto-Regular.ttf") format("TrueType");
   font-size: medium;
   font-weight: normal;
 }
@@ -20,6 +19,11 @@ body {
 }
 
 .container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.loadingcontainer {
   position: fixed;
   height: 100%;
   width: 100%;
@@ -32,12 +36,12 @@ body {
   animation: fadeout 0.2s 3s linear forwards;
   z-index: 1000;
 }
-.container__img {
+.loadingcontainer__img {
   width: 80%;
   height: 100px;
   margin-bottom: 35px;
 }
-.container__loader {
+.loadingcontainer__loader {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #9356DC;
   border-radius: 50%;
@@ -191,6 +195,9 @@ body {
   margin: 0px 0px 40px 10px;
   position: relative;
 }
+.funct__listbullet:hover {
+  background-color: #e4d5f6;
+}
 .funct__listbullet::before {
   counter-increment: CompteListe 1;
   content: counter(CompteListe) "";
@@ -215,9 +222,6 @@ body {
   font-size: 16.3px;
 }
 
-.third_li {
-  background-color: #e4d5f6;
-}
 .third_li .fas {
   color: #9356DC;
 }
@@ -241,11 +245,12 @@ body {
   }
   .funct__listbullet {
     flex: 1;
-    margin: 0px 40px 10px 10px;
+    margin: 0px 20px 10px 20px;
+    padding: 20px 0px;
   }
   .funct__listbullet::before {
     position: relative;
-    left: -31px;
+    left: -11px;
   }
 }
 .Rest {

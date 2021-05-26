@@ -16,6 +16,9 @@
             padding:20px;
             margin: 0px 0px 40px 10px;
             position:relative;
+            &:hover{
+                background-color: lighten($primary-color,30%);
+            }
         }
         &bullet::before{
             counter-increment: CompteListe 1;
@@ -43,7 +46,7 @@
     }
 }
 .third_li{
-    background-color: lighten($primary-color,30%);
+    
     .fas{
         color:$primary-color;
     }
@@ -61,11 +64,12 @@
             
             &bullet{
                 flex:1;
-                margin:0px 40px 10px 10px;
+                margin:0px 20px 10px 20px;
+                padding:20px 0px;
             }
             &bullet::before{
-                position:relative;
-                left:-31px;
+                position:relative;                
+                left:-11px;
             }            
         }
     }

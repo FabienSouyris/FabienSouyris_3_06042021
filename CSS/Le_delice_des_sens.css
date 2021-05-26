@@ -1,14 +1,13 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Shrikhand";
-  src: url("Fonts/Shrikhand-Regular.ttf") format("TrueType");
+  src: url("../../Fonts/Shrikhand-Regular.ttf") format("TrueType");
   font-size: medium;
   font-weight: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url("Fonts/Roboto-Black.ttf") format("TrueType");
-  src: url("Fonts/Roboto-Regular.ttf") format("TrueType");
+  src: url("../../Fonts/Roboto-Regular.ttf") format("TrueType");
   font-size: medium;
   font-weight: normal;
 }
@@ -211,6 +210,7 @@ body {
 }
 .maindivmenusections {
   margin-bottom: 35px;
+  overflow: hidden;
 }
 .maindivmenusections__title {
   position: relative;
@@ -240,7 +240,7 @@ body {
   margin: 10px 0px;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 150px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
 }
@@ -312,6 +312,7 @@ body {
   }
 }
 .maincommand {
+  width: 100%;
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -366,4 +367,4 @@ body {
   margin-right: 10px;
 }
 
-/*# sourceMappingURL=A_la_francaise.css.map */
+/*# sourceMappingURL=Le_delice_des_sens.css.map */
