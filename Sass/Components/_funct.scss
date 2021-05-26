@@ -17,7 +17,10 @@
             margin: 0px 0px 40px 10px;
             position:relative;
             &:hover{
-                background-color: lighten($primary-color,30%);
+                background-color: lighten($primary-color,35%);
+            }
+            &:hover .funct__listbullet--icon{
+                color:$primary-color;
             }
         }
         &bullet::before{
@@ -45,12 +48,7 @@
         }
     }
 }
-.third_li{
-    
-    .fas{
-        color:$primary-color;
-    }
-}
+
 @keyframes fadein{
     0%{display:none; opacity:0;}
     99%{opacity:1;}

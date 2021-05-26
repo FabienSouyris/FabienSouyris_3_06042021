@@ -182,11 +182,11 @@ body {
 .mainheader {
   display: flex;
   justify-content: space-between;
-  padding: 31px 36px 5px 20px;
+  padding: 31px 10px 5px 10px;
   position: relative;
 }
 .mainheader__title {
-  padding: 0;
+  padding: 0 0 0 10px;
   margin: 0;
   font-family: "Shrikhand";
   font-size: 28px;
@@ -194,6 +194,7 @@ body {
 .mainheader__icon {
   font-weight: bold;
   color: #000;
+  padding: 0px 10px 0px 0px;
 }
 .mainheader__icon::before {
   content: "";
@@ -211,11 +212,13 @@ body {
 }
 
 .maindiv {
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 .maindivmenusections {
   margin-bottom: 35px;
   overflow: hidden;
+  max-width: 100%;
+  padding: 0 10px;
 }
 .maindivmenusections__title {
   position: relative;
@@ -242,10 +245,10 @@ body {
 .maindivmenusections__listli {
   display: flex;
   background-color: #fff;
-  margin: 10px 0px;
+  margin: 20px 0px;
   padding: 10px;
   border-radius: 15px;
-  box-shadow: 10px 150px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   cursor: pointer;
 }
@@ -263,7 +266,7 @@ body {
   white-space: nowrap;
 }
 .maindivmenusections__listlidivd_title {
-  font-size: 18px;
+  font-size: 17.5px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -271,7 +274,7 @@ body {
   padding: 0;
 }
 .maindivmenusections__listlidivd_text {
-  font-size: 14px;
+  font-size: 13.5px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -313,7 +316,7 @@ body {
   .maindiv {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
+    column-gap: 10px;
   }
 }
 .maincommand {
@@ -321,7 +324,7 @@ body {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  padding: 18px 10px 55px 10px;
+  padding: 18px 0px 55px 0px;
 }
 .maincommand__btn {
   margin-left: 0px;

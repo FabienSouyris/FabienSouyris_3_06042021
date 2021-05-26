@@ -196,7 +196,10 @@ body {
   position: relative;
 }
 .funct__listbullet:hover {
-  background-color: #e4d5f6;
+  background-color: #f2eafb;
+}
+.funct__listbullet:hover .funct__listbullet--icon {
+  color: #9356DC;
 }
 .funct__listbullet::before {
   counter-increment: CompteListe 1;
@@ -220,10 +223,6 @@ body {
 }
 .funct__listbullet--text {
   font-size: 16.3px;
-}
-
-.third_li .fas {
-  color: #9356DC;
 }
 
 @keyframes fadein {

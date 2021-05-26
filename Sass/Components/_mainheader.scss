@@ -1,10 +1,10 @@
 .mainheader{
     display:flex;
     justify-content:space-between;
-    padding: 31px 36px 5px 20px;
+    padding: 31px 10px 5px 10px;
     position:relative;
     &__title{
-        padding:0;
+        padding:0 0 0 10px;
         margin:0;
         font-family: 'Shrikhand';
         font-size:28px;
@@ -12,7 +12,7 @@
     &__icon{
         font-weight:bold;
         color:#000;
-                    
+        padding:0px 10px 0px 0px;                    
     }
     &__icon::before{
         content:"\f004";
